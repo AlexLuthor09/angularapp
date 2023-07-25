@@ -1,0 +1,2 @@
+C:\Users\capal\source\repos\OcarinApp\angularapp\obj\Debug\OcarinAngular.esproj.SuggestedBindingRedirects.cache
+C:\Users\capal\source\repos\OcarinApp\angularapp\obj\Debug\OcarinAngular.esproj.CoreCompileInputs.cache
