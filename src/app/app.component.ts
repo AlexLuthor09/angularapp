@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public forecasts?: WeatherForecast[];
+  public forecasts?: Animateurs[];
 
   constructor(http: HttpClient) {
-    http.get<WeatherForecast[]>('/weatherforecast').subscribe(result => {
+    http.get<Animateurs[]>('/api/Animateurs').subscribe(result => {
       this.forecasts = result;
     }, error => console.error(error));
   }
@@ -18,9 +18,15 @@ export class AppComponent {
   title = 'angularapp';
 }
 
-interface WeatherForecast {
-  date: string;
-  temperatureC: number;
-  temperatureF: number;
-  summary: string;
+interface Animateurs {
+  id: Int16Array;
+  nom: string;
+  prenom: string;
+  responsableTrancheAge: string;
+  dateNaissance: Date;
+  adresse: string;
+  numeroTelephone: string;
+  email: string;
+  allergie: string;
+  commentaire: string;
 }
