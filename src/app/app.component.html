@@ -1,24 +1,8 @@
-<h1 id="tableLabel">Weather forecast</h1>
+<h1>OcarinApp</h1>
 
-<p>This component demonstrates fetching data from the server.</p>
+<div>
+  <app-sidenav></app-sidenav>
+</div>
 
-<p *ngIf="!forecasts"><em>Loading... Please refresh once the ASP.NET backend has started. See <a href="https://aka.ms/jspsintegrationangular">https://aka.ms/jspsintegrationangular</a> for more details.</em></p>
 
-<table *ngIf="forecasts">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Nom</th>
-            <th>Prénom</th>
-            <th>Commentaires</th>
-        </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let forecast of forecasts">
-        <td>{{ forecast.id }}</td>
-        <td>{{ forecast.nom }}</td>
-        <td>{{ forecast.prenom }}</td>
-        <td>{{ forecast.commentaire }}</td>
-      </tr>
-    </tbody>
-</table>
+

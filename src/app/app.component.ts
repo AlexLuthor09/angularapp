@@ -7,13 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public forecasts?: Animateurs[];
-
-  constructor(http: HttpClient) {
-    http.get<Animateurs[]>('/api/Animateurs').subscribe(result => {
-      this.forecasts = result;
-    }, error => console.error(error));
-  }
 
   title = 'angularapp';
 }

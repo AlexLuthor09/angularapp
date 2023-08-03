@@ -9,21 +9,25 @@ module.exports = {
                 "node": true
             },
             "files": [
-                ".eslintrc.{js,cjs}"
+                ".eslintrc.{js,cjs,json}"
             ],
             "parserOptions": {
                 "sourceType": "script"
             }
         }
     ],
+    "extends": "eslint:recommended",
     "parser": "@typescript-eslint/parser",
-    "parserOptions": {
+  "parserOptions": {
+
         "ecmaVersion": "latest",
-        "sourceType": "module"
+        "sourceType": "module",
+        project: './tsconfig.json',
     },
     "plugins": [
         "@typescript-eslint"
     ],
     "rules": {
-    }
+        
+      }
 }
