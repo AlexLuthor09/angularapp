@@ -1,1 +1,31 @@
-<p>ajout-animateur works!</p>
+<h2>Ajouter un animateur</h2>
+<form (ngSubmit)="onSubmit()">
+  <label>Nom :</label>
+  <input type="text" [(ngModel)]="nom" name="nom" required>
+
+  <label>Prénom :</label>
+  <input type="text" [(ngModel)]="prenom" name="prenom" required>
+
+  <label>Responsable de tranche d'âge :</label>
+  <input type="text" [(ngModel)]="responsableTrancheAge" name="responsableTrancheAge" >
+
+  <label>Date de naissance :</label>
+  <input type="date" [(ngModel)]="dateNaissance" name="dateNaissance" required>
+
+  <label>Adresse :</label>
+  <input type="text" [(ngModel)]="adresse" name="adresse" >
+
+  <label>Numéro de téléphone :</label>
+  <input type="text" [(ngModel)]="numeroTelephone" name="numeroTelephone"  pattern="^0[1-9]([-. ]?[0-9]{2}){4}$">
+
+  <label>Email :</label>
+  <input type="email" [(ngModel)]="email" name="email"  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+
+  <label>Allergies :</label>
+  <textarea [(ngModel)]="allergie" name="allergie"></textarea>
+
+  <label>Commentaires :</label>
+  <textarea [(ngModel)]="commentaire" name="commentaire"></textarea>
+
+  <button type="submit">Ajouter</button>
+</form>
