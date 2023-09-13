@@ -26,7 +26,7 @@ const TestTable: Animateurs[] = [
     dateNaissance: Date.now(),
     adresse: 'tu dois pas voir ça',
     numeroTelephone: '00000',
-    email: 'bite',
+    email: 'truc',
     allergie: 'ceci n\'est pas normal',
     commentaire: 'tu dois pas voir ça'
   },
@@ -37,7 +37,7 @@ const TestTable: Animateurs[] = [
     dateNaissance: Date.now(),
     adresse: 'tu dois pas voir ça',
     numeroTelephone: '00000',
-    email: 'bite',
+    email: 'truc',
     allergie: 'Api pas accessible',
     commentaire: 'BD non connecter'
   }
