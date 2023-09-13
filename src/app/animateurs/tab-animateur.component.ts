@@ -11,7 +11,6 @@ interface Animateurs {
   id: number;
   nom: string;
   prenom: string;
-  responsableTrancheAge: string;
   dateNaissance: number;
   adresse: string;
   numeroTelephone: string;
@@ -24,7 +23,6 @@ const TestTable: Animateurs[] = [
     id: 0,
     nom: 'Test',
     prenom: 'Error',
-    responsableTrancheAge: '3.6',
     dateNaissance: Date.now(),
     adresse: 'tu dois pas voir ça',
     numeroTelephone: '00000',
@@ -36,7 +34,6 @@ const TestTable: Animateurs[] = [
     id: 1,
     nom: 'Error',
     prenom: 'Error',
-    responsableTrancheAge: 'BD',
     dateNaissance: Date.now(),
     adresse: 'tu dois pas voir ça',
     numeroTelephone: '00000',
@@ -53,7 +50,7 @@ const TestTable: Animateurs[] = [
 })
 export class TabAnimateurs {
   public Animateurs: Animateurs[] = TestTable;
-  public displayedColumns: string[] = ['id', 'nom', 'prenom', 'commentaire', 'allergie'];
+  public displayedColumns: string[] = ['id', 'nom', 'prenom', 'commentaire', 'allergie', 'dateNaissance'];
   public dataSource?: DataSourceObservable;
   
   constructor(private http: HttpClient, private dialog: MatDialog) {

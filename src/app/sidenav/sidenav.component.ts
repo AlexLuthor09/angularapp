@@ -23,9 +23,10 @@ export class SidenavComponent implements OnDestroy {
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
 
-    http.get<Plaines[]>('/Plaines').subscribe(result => {
+    http.get<Plaines[]>('api/Plaines').subscribe(result => {
       this.Plaines = result;
     }, error => console.error(error));
+   
   }
 
   ngOnDestroy(): void {

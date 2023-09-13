@@ -10,12 +10,14 @@ import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
 import { MatDialogModule } from '@angular/material/dialog';
 import { NgIf, NgFor, CommonModule } from '@angular/common';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 import { AppComponent } from './app.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { TabAnimateurs } from './animateurs/tab-animateur.component';
 import { AjoutAnimateurComponent } from './animateurs/ajout-animateur/ajout-animateur.component';
 import { FormsModule } from '@angular/forms';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 
 
@@ -24,7 +26,8 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     SidenavComponent,
     TabAnimateurs,
-    AjoutAnimateurComponent
+    AjoutAnimateurComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,8 @@ import { FormsModule } from '@angular/forms';
     NgIf, NgFor,
     MatDialogModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    MatCheckboxModule
     
   ],
   providers: [],
