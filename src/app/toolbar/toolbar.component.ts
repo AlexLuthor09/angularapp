@@ -11,7 +11,7 @@ export class ToolbarComponent {
   @ViewChild('app-sidenav') snav!: MatSidenav;
 
   toggleSidenav() {
-    this.snav.toggle();
+    //this.snav.toggle();
  
   }
 }
