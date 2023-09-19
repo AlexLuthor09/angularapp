@@ -12,5 +12,6 @@ export class ToolbarComponent {
 
   toggleSidenav() {
     this.snav.toggle();
+ 
   }
 }
